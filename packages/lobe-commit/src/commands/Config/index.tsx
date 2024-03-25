@@ -74,28 +74,16 @@ const Config = memo(() => {
           <SelectInput
             items={[
               {
-                label: LanguageModel.GPT3_5,
-                value: LanguageModel.GPT3_5,
+                label: LanguageModel.MOONSHOT_8K,
+                value: LanguageModel.MOONSHOT_8K,
               },
               {
-                label: LanguageModel.GPT3_5_1106,
-                value: LanguageModel.GPT3_5_1106,
+                label: LanguageModel.MOONSHOT_32K,
+                value: LanguageModel.MOONSHOT_32K,
               },
               {
-                label: LanguageModel.GPT3_5_16K,
-                value: LanguageModel.GPT3_5_16K,
-              },
-              {
-                label: LanguageModel.GPT4,
-                value: LanguageModel.GPT4,
-              },
-              {
-                label: LanguageModel.GPT4_PREVIEW,
-                value: LanguageModel.GPT4_PREVIEW,
-              },
-              {
-                label: LanguageModel.GPT4_32K,
-                value: LanguageModel.GPT4_32K,
+                label: LanguageModel.MOONSHOT_128K,
+                value: LanguageModel.MOONSHOT_128K,
               },
             ]}
             onSelect={(item) => setConfig('modelName', item.value as LanguageModel)}
@@ -142,12 +130,12 @@ const Config = memo(() => {
           <TextInput
             defaultValue={store.openaiToken}
             onSubmit={(v) => setConfig('openaiToken', v)}
-            placeholder="Input OpenAI token..."
+            placeholder="Input MoonShot token..."
           />
         ),
         defaultValue: getDefault('openaiToken'),
         key: 'openaiToken',
-        label: 'OpenAI token',
+        label: 'MoonShot token',
         showValue: false,
         value: store.openaiToken,
       },
