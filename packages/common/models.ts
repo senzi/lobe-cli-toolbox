@@ -8,9 +8,9 @@ export enum LanguageModel {
 }
 
 export const ModelTokens: Record<LanguageModel, number> = {
-  [LanguageModel.MOONSHOT_8K]: 8196,
-  [LanguageModel.MOONSHOT_32K]: 32_768,
-  [LanguageModel.MOONSHOT_128K]: 128_000,
+  [LanguageModel.MOONSHOT_8K]: 8000,
+  [LanguageModel.MOONSHOT_32K]: 30_000,
+  [LanguageModel.MOONSHOT_128K]: 120_000,
 };
 
 export const defaultModel = LanguageModel.MOONSHOT_8K;
