@@ -1,6 +1,6 @@
 import Conf from 'conf';
 
-import { ConfigSchema } from '@/types/config';
+import { Config, ConfigSchema } from '@/types/config';
 
 import { ModelTokens, defaultModel } from '../../../common/models';
 
@@ -43,7 +43,12 @@ export const schema: ConfigSchema = {
   },
 };
 
-export const config = new Conf({
-  projectName: 'lobe-commit',
+// 🟣 命令名识别，用于隔离配置路径
+const binName = process.argv[1]?.split('/').pop() ?? '';
+const projectName = binName === 'lobe2' ? 'lobe2' : 'lobe-commit';
+
+// ✅ 用你自己的 Config 类型做泛型
+export const config = new Conf<Config>({
+  projectName,
   schema,
 });

@@ -30,8 +30,7 @@
     "@": "./src"
   },
   "bin": {
-    "lobe": "dist/cli.js",
-    "lobe-commit": "dist/cli.js"
+    "lobe2": "dist/cli.js"
   },
   "files": [
     "dist"

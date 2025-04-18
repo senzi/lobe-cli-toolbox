@@ -1,6 +1,7 @@
 // refs: https://github.com/lobehub/lobe-chat/blob/main/src/config/modelProviders/openai.ts
 
 export enum LanguageModel {
+  DEEPSEEK = 'deepseek-chat',
   /**
    * GPT 3.5 Turbo
    */
@@ -42,6 +43,7 @@ export const ModelTokens: Record<LanguageModel, number> = {
   [LanguageModel.GPT4_TURBO_1106]: 128_000,
   [LanguageModel.GPT4_TURBO_2024_05_13]: 128_000,
   [LanguageModel.GPT4_TURBO_2024_07_18]: 16_385,
+  [LanguageModel.DEEPSEEK]: 32_000,
 };
 
-export const defaultModel = LanguageModel.GPT4_TURBO_2024_07_18;
+export const defaultModel = LanguageModel.DEEPSEEK;
