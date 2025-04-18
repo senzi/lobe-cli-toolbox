@@ -1,29 +1,28 @@
 {
-  "name": "@lobehub/commit-cli",
-  "version": "2.15.3",
-  "description": "Lobe Commit is a CLI tool that uses ChatGPT to generate Gitmoji-based commit messages",
+  "name": "lobe2-cli",
+  "version": "0.1.0",
+  "description": "A fully customizable commit message generator powered by AI, forked and enhanced from Lobe Commit.",
   "keywords": [
-    "ai",
-    "git",
     "commit",
-    "openai",
+    "cli",
+    "git",
     "gpt",
-    "gitmoji-cli",
-    "git-commits",
     "chatgpt",
+    "deepseek",
+    "openai",
     "aicommit",
-    "ai-commit"
+    "lobe2"
   ],
-  "homepage": "https://github.comlobehub/lobe-cli-toolbox/tree/master/packages/lobe-commit",
+  "homepage": "https://github.com/senzi/lobe-cli-toolbox",
   "bugs": {
-    "url": "https://github.com/lobehub/lobe-cli-toolbox/issues/new"
+    "url": "https://github.com/senzi/lobe-cli-toolbox/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lobehub/lobe-cli-toolbox.git"
+    "url": "https://github.com/senzi/lobe-cli-toolbox.git"
   },
   "license": "MIT",
-  "author": "LobeHub <i@lobehub.com>",
+  "author": "sennes <sennes111762@gmail.com>",
   "sideEffects": false,
   "type": "module",
   "imports": {
